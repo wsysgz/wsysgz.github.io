@@ -1,4 +1,4 @@
-/*! Custom Transparent Light Theme for Giscus */
+/*! Custom Semi-Transparent Light Theme for Giscus */
 main {
   /* Text Colors - Standard GitHub Light */
   --color-fg-default: #24292f;
@@ -8,14 +8,15 @@ main {
   --color-accent-emphasis: #0969da;
   --color-danger-fg: #cf222e;
 
-  /* Background Colors - Transparent */
-  --color-canvas-default: transparent;
-  --color-canvas-overlay: #ffffff; /* Keep overlay opaque for readability */
-  --color-canvas-inset: transparent;
-  --color-canvas-subtle: transparent;
+  /* Background Colors - Semi-Transparent Light */
+  /* 使用半透明白色背景，避免全透明，增加层次感 */
+  --color-canvas-default: rgba(255, 255, 255, 0.6);
+  --color-canvas-overlay: #ffffff;
+  --color-canvas-inset: rgba(255, 255, 255, 0.5);
+  --color-canvas-subtle: rgba(255, 255, 255, 0.6);
   
   /* Borders */
-  --color-border-default: transparent;
+  --color-border-default: rgba(208, 215, 222, 0.5);
   --color-border-muted: rgba(175,184,193,0.2);
 
   /* Buttons */
