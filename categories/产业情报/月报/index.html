@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>分类: 月报 | 西风烈</title><meta name="author" content="wsysgz"><meta name="copyright" content="wsysgz"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="一饮一啄，莫非前定">
+<meta property="og:type" content="website">
+<meta property="og:title" content="西风烈">
+<meta property="og:url" content="https://wsysgz.github.io/categories/%E4%BA%A7%E4%B8%9A%E6%83%85%E6%8A%A5/%E6%9C%88%E6%8A%A5/index.html">
+<meta property="og:site_name" content="西风烈">
+<meta property="og:description" content="一饮一啄，莫非前定">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://wsysgz.github.io/img/avatar.jpg">
+<meta property="article:author" content="wsysgz">
+<meta property="article:tag" content="Butterfly">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="个人网站">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="技术博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wsysgz.github.io/img/avatar.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://wsysgz.github.io/categories/%E4%BA%A7%E4%B8%9A%E6%83%85%E6%8A%A5/%E6%9C%88%E6%8A%A5/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":300,"languages":{"author":"作者: wsysgz","link":"链接: ","source":"来源: 西风烈","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '分类: 月报',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'category'
+}</script><link rel="stylesheet" href="/css/custom.css"><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewbox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"/><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"/><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"/><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"/></symbol><symbol id="icon-moon" viewbox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"/><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"/></symbol></svg><meta name="generator" content="Hexo 8.1.1"></head><body><div class="site-media-shell" id="site-media-shell" aria-hidden="true" data-media-state="poster" data-motion-mode="full"><img class="site-media-shell__poster" src="/media/site-shell/beijing-poster.jpg" alt decoding="async" loading="eager"><video class="site-media-shell__video" src="/media/site-shell/beijing-bg.mp4" poster="/media/site-shell/beijing-poster.jpg" muted loop playsinline preload="metadata" data-site-media-video></video><div class="site-media-shell__veil"></div></div><div class="site-music-player" id="site-music-player" aria-label="站点音乐播放器" role="group"><strong class="site-music-player__title" data-site-music-title>毛_1</strong><div class="site-music-player__controls"><button class="site-music-player__button" type="button" data-site-music-action="prev" aria-label="上一首" title="上一首"><svg class="site-music-player__glyph" viewbox="0 0 20 20" aria-hidden="true"><path d="M12.8 4.6L7.2 10l5.6 5.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button class="site-music-player__button site-music-player__button--primary" type="button" data-site-music-action="toggle" aria-label="播放" title="播放"><svg class="site-music-player__glyph site-music-player__glyph--play" viewbox="0 0 20 20" aria-hidden="true"><path d="M6 4L16 10L6 16Z"/></svg><svg class="site-music-player__glyph site-music-player__glyph--pause" viewbox="0 0 20 20" aria-hidden="true"><path d="M6 4H9V16H6zM11 4H14V16H11z"/></svg></button><button class="site-music-player__button" type="button" data-site-music-action="next" aria-label="下一首" title="下一首"><svg class="site-music-player__glyph" viewbox="0 0 20 20" aria-hidden="true"><path d="M7.2 4.6L12.8 10l-5.6 5.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/industry-focus/"><i class="fa-fw fas fa-satellite-dish"></i><span> 产业情报</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page fixed" id="page-header" style="background-image: url(/img/banner.jpg);"><nav id="nav"><!-- 左侧博客信息区域--><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">西风烈</span></a></span><!-- 新增的导航菜单容器（居中布局关键）--><div id="nav-menus-container"><!-- 菜单主体部分--><div id="menus"><!-- 菜单项--><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/industry-focus/"><i class="fa-fw fas fa-satellite-dish"></i><span> 产业情报</span></a></div></div></div></div><!-- 右侧功能区域（新增容器）--><div id="nav-right-container"><!-- 搜索按钮（移动到右侧）--><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><!-- 移动端汉堡菜单按钮--><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">月报</h1></div></header><main class="layout layout--dual-aside" id="content-inner"><div id="category"><div class="article-sort-title">分类 - 月报</div><div class="article-sort"><div class="article-sort-item year">2026</div><div class="article-sort-item"><a class="article-sort-item-img" href="/industry-focus/monthly/2026-03/" title="月报 2026-03"><img src="/blog_img/industry-focus-monthly-2026-03.jpg" alt="月报 2026-03" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2026-04-04T21:17:09.000Z" title="发表于 2026-04-05 05:17:09">2026-04-05</time></div><a class="article-sort-item-title" href="/industry-focus/monthly/2026-03/" title="月报 2026-03">月报 2026-03</a></div></div></div></div><div class="aside-content" id="left-aside-content"><div class="sticky_layout"><div class="card-widget card-ideology" id="left-marx-card"><div class="ideology-card__body"><div class="ideology-card__text">人的思维是否具有客观的真理性，这不是一个理论的问题，而是一个实践的问题。
+人应该在实践中证明自己思维的真理性，即自己思维的现实性和力量，自己思维的此岸性。</div><div class="ideology-card__source">出处：马克思《关于费尔巴哈的提纲》</div><div class="ideology-card__recommend"><span class="ideology-card__label">推荐原著：</span><a class="ideology-card__link" href="https://www.marxists.org/chinese/marx/marxist.org-chinese-marx-1845.htm" target="_blank" rel="external nofollow noopener noreferrer">《关于费尔巴哈的提纲》</a></div></div></div><div class="card-widget card-ideology" id="left-mao-card"><div class="ideology-card__body"><div class="ideology-card__text">这里用得着中国的一句老话：星星之火，可以燎原。
+这就是说，现在虽只有一点小小的力量，但是它的发展会是很快的，它在中国的环境里不仅具备了发展的可能性，而且具备了发展的必然性。</div><div class="ideology-card__source">出处：毛泽东《星星之火，可以燎原》</div><div class="ideology-card__recommend"><span class="ideology-card__label">推荐阅读：</span><a class="ideology-card__link" href="https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19300105.htm" target="_blank" rel="external nofollow noopener noreferrer">《星星之火，可以燎原》</a></div></div></div><div class="card-widget card-industry-focus" id="industry-focus-card"><div class="item-headline"><i class="fas fa-satellite-dish"></i><span>产业情报</span><div class="industry-focus-card__ranges"><button class="industry-focus-card__range is-active" type="button" data-range="day">日</button><button class="industry-focus-card__range" type="button" data-range="week">周</button><button class="industry-focus-card__range" type="button" data-range="month">月</button></div></div><div class="industry-focus-card"><div class="industry-focus-card__meta"><span class="industry-focus-card__live" id="industry-focus-card-live">GitHub / GitHub 中文社区 / DeepWiki</span><time class="industry-focus-card__updated" id="industry-focus-card-updated">正在读取热点项目...</time></div><div class="industry-focus-card__reports"><a class="industry-focus-card__report-link" id="industry-focus-card-weekly-link" href="/industry-focus/weekly/">周报</a><a class="industry-focus-card__report-link" id="industry-focus-card-monthly-link" href="/industry-focus/monthly/">月报</a></div><div class="industry-focus-card__panel is-active"><ul class="industry-focus-card__list" id="industry-focus-card-list" data-visible-count="5" data-item-selector=":scope &gt; .industry-focus-card__item"><li class="industry-focus-card__status">正在加载热点项目...</li></ul></div><div class="industry-focus-card__footer"><div class="industry-focus-card__pager"><button class="industry-focus-card__page" id="industry-focus-card-page-prev" type="button" aria-label="前翻一页" title="前翻一页" hidden><</button><button class="industry-focus-card__page" id="industry-focus-card-page-next" type="button" aria-label="后翻一页" title="后翻一页" hidden>></button></div></div></div></div><div class="card-widget card-industry-source" id="industry-source-card"><div class="item-headline"><i class="fas fa-compass"></i><span>信息源</span><div class="industry-source-card__tabs"><button class="industry-source-card__tab is-active" type="button" data-category="hot">热点</button><button class="industry-source-card__tab" type="button" data-category="news">要闻</button><button class="industry-source-card__tab" type="button" data-category="professional">专业</button></div></div><div class="industry-source-card"><div class="industry-source-card__meta"><span class="industry-source-card__live" id="industry-source-card-live">每周一 09:00 巡检</span><time class="industry-source-card__updated" id="industry-source-card-updated">正在读取信息源...</time></div><p class="industry-source-card__summary" id="industry-source-card-summary">正在整理信息源入口...</p><div class="industry-source-card__sections" id="industry-source-card-sections"></div><div class="industry-source-card__panel is-active"><ul class="industry-source-card__list" id="industry-source-card-list" data-visible-count="5" data-item-selector=":scope &gt; .industry-source-card__item"><li class="industry-source-card__status">正在加载信息源...</li></ul></div><div class="industry-source-card__footer"><div class="industry-source-card__pager"><button class="industry-source-card__page" id="industry-source-card-page-prev" type="button" aria-label="前翻一页" title="前翻一页" hidden><</button><button class="industry-source-card__page" id="industry-source-card-page-next" type="button" aria-label="后翻一页" title="后翻一页" hidden>></button></div></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info-name">wsysgz</div><div class="author-info-description">一饮一啄，莫非前定</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/wsysgz"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/wsysgz" target="_blank" title="Github" rel="external nofollow noopener noreferrer"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/522929583?spm_id_from=333.1387.0.0" target="_blank" title="Bilibili" rel="external nofollow noopener noreferrer"><i class="fab fa-bilibili" style="color: #fb7299;"></i></a><a class="social-icon" href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=2416007848@qq.com" target="_blank" title="Email" rel="external nofollow noopener noreferrer"><i class="fas fa-envelope" style="color: #12B7F5;"></i></a></div></div><div class="card-widget card-announcement" id="announcement-poem-card"><div class="announcement-poem"><a class="announcement-poem__title" href="https://www.marxists.org/chinese/maozedong/1968/4-098.htm" target="_blank" rel="external nofollow noopener noreferrer">忆秦娥·娄山关</a><div class="announcement-poem__line">西风烈，
+长空雁叫霜晨月。
+霜晨月，
+马蹄声碎，喇叭声咽。
+雄关漫道真如铁，
+而今迈步从头越。
+从头越，
+苍山如海，残阳如血。</div></div></div><div class="sticky_layout"><div class="card-widget card-gov-news" id="gov-news-card"><div class="item-headline"><i class="fas fa-newspaper"></i><span>国家要闻</span><div class="gov-news__ranges"><button class="gov-news__range is-active" type="button" data-range="week">周</button><button class="gov-news__range" type="button" data-range="month">月</button><button class="gov-news__range" type="button" data-range="year">年</button></div></div><div class="gov-news"><div class="gov-news__tabs"><button class="gov-news__tab is-active" type="button" data-tab="yaowen">要闻</button><button class="gov-news__tab" type="button" data-tab="policy">最新政策</button><button class="gov-news__tab" type="button" data-tab="interpretation">政策解读</button><button class="gov-news__tab" type="button" data-tab="progress">工作进行时</button></div><div class="gov-news__meta"><span class="gov-news__live">每日 20:00 更新</span><time class="gov-news__updated">正在同步官方数据...</time></div><div class="gov-news__panels"><div class="gov-news__panel is-active" data-panel="yaowen"><ul class="gov-news__list" data-visible-count="5" data-item-selector=":scope &gt; .gov-news__item"><li class="gov-news__status">正在加载要闻...</li></ul></div><div class="gov-news__panel" data-panel="policy"><ul class="gov-news__list" data-visible-count="5" data-item-selector=":scope &gt; .gov-news__item"><li class="gov-news__status">正在加载最新政策...</li></ul></div><div class="gov-news__panel" data-panel="interpretation"><ul class="gov-news__list" data-visible-count="5" data-item-selector=":scope &gt; .gov-news__item"><li class="gov-news__status">正在加载政策解读...</li></ul></div><div class="gov-news__panel" data-panel="progress"><ul class="gov-news__list" data-visible-count="5" data-item-selector=":scope &gt; .gov-news__item"><li class="gov-news__status">正在加载工作进行时...</li></ul></div></div><div class="gov-news__footer"><a class="gov-news__more" id="gov-news-more" href="https://www.gov.cn/yaowen/liebiao/" target="_blank" rel="external nofollow noopener noreferrer">查看要闻栏目</a><div class="gov-news__pager"><button class="gov-news__page" id="gov-news-page-prev" type="button" aria-label="前翻一页" title="前翻一页" hidden><</button><button class="gov-news__page" id="gov-news-page-next" type="button" aria-label="后翻一页" title="后翻一页" hidden>></button></div></div></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list recent-post-scroll" data-visible-count="3"><div class="aside-list-item"><a class="thumbnail" href="/industry-focus/monthly/2026-03/" title="月报 2026-03"><img src="/blog_img/industry-focus-monthly-2026-03.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="月报 2026-03"></a><div class="content"><a class="title" href="/industry-focus/monthly/2026-03/" title="月报 2026-03">月报 2026-03</a><time datetime="2026-04-04T21:17:09.000Z" title="发表于 2026-04-05 05:17:09">2026-04-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/c0d3a102/" title="让 Codex 接管思源笔记，并打通 Hexo 博客仓库"><img src="/blog_img/codex-siyuan-workspace-bridge.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="让 Codex 接管思源笔记，并打通 Hexo 博客仓库"></a><div class="content"><a class="title" href="/posts/c0d3a102/" title="让 Codex 接管思源笔记，并打通 Hexo 博客仓库">让 Codex 接管思源笔记，并打通 Hexo 博客仓库</a><time datetime="2026-04-02T12:45:00.000Z" title="发表于 2026-04-02 20:45:00">2026-04-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/47e40c74/" title="年终小结"><img src="/blog_img/%E5%B0%8F%E7%BB%9326.1.1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="年终小结"></a><div class="content"><a class="title" href="/posts/47e40c74/" title="年终小结">年终小结</a><time datetime="2026-01-02T08:14:25.000Z" title="发表于 2026-01-02 16:14:25">2026-01-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1/" title="博客美化todo"><img src="/img/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96todo.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客美化todo"></a><div class="content"><a class="title" href="/posts/1/" title="博客美化todo">博客美化todo</a><time datetime="2025-12-27T13:07:23.983Z" title="发表于 2025-12-27 21:07:23">2025-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1243066710/" title="demo"><img src="/img/demo.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="demo"></a><div class="content"><a class="title" href="/posts/1243066710/" title="demo">demo</a><time datetime="2025-12-27T13:07:23.981Z" title="发表于 2025-12-27 21:07:23">2025-12-27</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%AA%E4%BA%BA%E6%97%A5%E5%BF%97/"><span class="card-category-list-name">个人日志</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%AA%E4%BA%BA%E6%97%A5%E5%BF%97/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"><span class="card-category-list-name">年终总结</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%A7%E4%B8%9A%E6%83%85%E6%8A%A5/"><span class="card-category-list-name">产业情报</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%A7%E4%B8%9A%E6%83%85%E6%8A%A5/%E6%9C%88%E6%8A%A5/"><span class="card-category-list-name">月报</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%8A%98%E8%85%BE/"><span class="card-category-list-name">技术折腾</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%8A%98%E8%85%BE/AI%E5%8D%8F%E4%BD%9C/"><span class="card-category-list-name">AI协作</span><span class="card-category-list-count">1</span></a></li></ul></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/" style="font-size: 1.1em; color: #999">年终总结</a> <a href="/tags/%E6%80%9D%E6%BA%90%E7%AC%94%E8%AE%B0/" style="font-size: 1.1em; color: #999">思源笔记</a> <a href="/tags/IT/" style="font-size: 1.1em; color: #999">IT</a> <a href="/tags/%E7%94%B5%E5%AD%90%E4%BF%A1%E6%81%AF/" style="font-size: 1.1em; color: #999">电子信息</a> <a href="/tags/Codex/" style="font-size: 1.1em; color: #999">Codex</a> <a href="/tags/AI/" style="font-size: 1.1em; color: #999">AI</a> <a href="/tags/Hexo/" style="font-size: 1.1em; color: #999">Hexo</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 1.1em; color: #999">思考</a> <a href="/tags/MCP/" style="font-size: 1.1em; color: #999">MCP</a> <a href="/tags/AI-analyze/" style="font-size: 1.1em; color: #999">AI_analyze</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/04/">
+            <span class="card-archive-list-date">
+              四月 2026
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/01/">
+            <span class="card-archive-list-date">
+              一月 2026
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/12/">
+            <span class="card-archive-list-date">
+              十二月 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">9.7k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastpushdate="2026-04-05T18:59:56.960Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-color: rgba(45, 10, 61, 0.2);"><div class="footer-other"><div class="footer-copyright"></div><div class="footer_custom_text"><div>2025 wsysgz - 所有权利保留</div>
+<div>> stay subside <</div>
+<div>访问量:<span id="busuanzi_value_site_pv"></span> | 你是第<span id="busuanzi_value_site_uv"></span>位今日访客</div>
+</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><a class="icon-V" href="javascript:void(0);" onclick="switchNightMode()" title="日间和夜间模式切换"><svg width="25" height="25" viewbox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"/></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><div class="js-pjax"></div><script src="/js/sun_moon.js"></script><div id="he-plugin-simple"></div><script>WIDGET = {"CONFIG": {"modules": "01234","background": "5","tmpColor": "FF9900","tmpSize": "16","cityColor": "CCCCCC","citySize": "16","aqiColor": "D9D9D9","aqiSize": "16","weatherIconSize": "24","alertIconSize": "18","padding": "10px 10px 10px 10px","shadow": "0","language": "auto","fixed": "false","vertical": "top","horizontal": "left","key": "b6a6552912444b0292728f338d68d407"}}</script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', () => {
+  const pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:description\"]","link[rel=\"canonical\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      true
+        ? pjax.loadUrl('/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="输入关键词…" type="text"></div><hr><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.3"></script></div><script id="ideology-dataset" type="application/json">{"marx_lenin":[{"text":"人的思维是否具有客观的真理性，这不是一个理论的问题，而是一个实践的问题。\n人应该在实践中证明自己思维的真理性，即自己思维的现实性和力量，自己思维的此岸性。","source":"马克思《关于费尔巴哈的提纲》","recommend_title":"《关于费尔巴哈的提纲》","recommend_url":"https://www.marxists.org/chinese/marx/marxist.org-chinese-marx-1845.htm"},{"text":"共产党人可以把自己的理论概括为一句话：消灭私有制。\n但是，我们所说的并不是消灭劳动者自己劳动所得的个人占有，而是消灭那种以剥削雇佣劳动为基础的资产阶级占有。","source":"马克思、恩格斯《共产党宣言》","recommend_title":"《共产党宣言》","recommend_url":"https://www.marxists.org/chinese/marx-engels/04/001.htm"},{"text":"人们自己创造自己的历史，但是他们并不是随心所欲地创造，并不是在他们自己选定的条件下创造，\n而是在直接碰到的、既定的、从过去承继下来的条件下创造。","source":"马克思《路易·波拿巴的雾月十八日》","recommend_title":"《路易·波拿巴的雾月十八日》","recommend_url":"https://www.marxists.org/chinese/marx/marxist.org-chinese-marx-1852.htm"},{"text":"不是意识决定生活，而是生活决定意识。\n意识在任何时候都只能是被意识到了的存在，而人们的存在就是他们的现实生活过程。","source":"马克思、恩格斯《德意志意识形态》","recommend_title":"《德意志意识形态》","recommend_url":"https://www.marxists.org/chinese/marx-engels/03/index.htm"},{"text":"善于把对共产主义思想的无限忠诚同进行一切必要的实际妥协、机动、通融、迂回、退却的才干结合起来，\n这正是革命家必须学会的本领。","source":"列宁《共产主义运动中的“左派”幼稚病》","recommend_title":"《共产主义运动中的“左派”幼稚病》","recommend_url":"https://www.marxists.org/chinese/lenin-cworks/31/index.htm"},{"text":"少些，但要好些。少些，但要好些。\n这是我们今后一个相当长时期内，在国家机关建设上一切工作中都应当遵循的规则。","source":"列宁《宁肯少些，但要好些》","recommend_title":"《宁肯少些，但要好些》","recommend_url":"https://www.marxists.org/chinese/lenin-cworks/45/042.htm"}],"mao_quotes":[{"text":"这里用得着中国的一句老话：星星之火，可以燎原。\n这就是说，现在虽只有一点小小的力量，但是它的发展会是很快的，它在中国的环境里不仅具备了发展的可能性，而且具备了发展的必然性。","source":"毛泽东《星星之火，可以燎原》","recommend_title":"《星星之火，可以燎原》","recommend_url":"https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19300105.htm"},{"text":"没有调查，没有发言权。\n你对于某个问题没有调查，就停止你对于某个问题的发言权；这并不是野蛮，而是十分必要的态度。","source":"毛泽东《反对本本主义》","recommend_title":"《反对本本主义》","recommend_url":"https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-193005.htm"},{"text":"通过实践而发现真理，又通过实践而证实真理和发展真理。\n从感性认识而能动地发展到理性认识，又从理性认识而能动地指导革命实践，改造主观世界和客观世界。","source":"毛泽东《实践论》","recommend_title":"《实践论》","recommend_url":"https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-193707.htm"},{"text":"人总是要死的，但死的意义有不同。\n为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。","source":"毛泽东《为人民服务》","recommend_title":"《为人民服务》","recommend_url":"https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19440908.htm"},{"text":"下定决心，不怕牺牲，排除万难，去争取胜利。\n这个态度，就是共产党员应有的态度，就是革命人民应有的态度。","source":"毛泽东《愚公移山》","recommend_title":"《愚公移山》","recommend_url":"https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19450611.htm"}],"mao_poems":[{"title":"忆秦娥·娄山关","title_url":"https://www.marxists.org/chinese/maozedong/1968/4-098.htm","text":"西风烈，\n长空雁叫霜晨月。\n霜晨月，\n马蹄声碎，喇叭声咽。\n雄关漫道真如铁，\n而今迈步从头越。\n从头越，\n苍山如海，残阳如血。"},{"title":"沁园春·雪","title_url":"https://www.marxists.org/chinese/maozedong/1968/4-098.htm","text":"北国风光，千里冰封，万里雪飘。\n望长城内外，惟余莽莽；\n大河上下，顿失滔滔。\n山舞银蛇，原驰蜡象，\n欲与天公试比高。\n须晴日，看红装素裹，分外妖娆。\n\n江山如此多娇，引无数英雄竞折腰。\n惜秦皇汉武，略输文采；\n唐宗宋祖，稍逊风骚。\n一代天骄，成吉思汗，\n只识弯弓射大雕。\n俱往矣，数风流人物，还看今朝。"},{"title":"七律·长征","title_url":"https://www.marxists.org/chinese/maozedong/1968/4-098.htm","text":"红军不怕远征难，\n万水千山只等闲。\n五岭逶迤腾细浪，\n乌蒙磅礴走泥丸。\n金沙水拍云崖暖，\n大渡桥横铁索寒。\n更喜岷山千里雪，\n三军过后尽开颜。"},{"title":"采桑子·重阳","title_url":"https://www.marxists.org/chinese/maozedong/1968/4-098.htm","text":"人生易老天难老，岁岁重阳。\n今又重阳，战地黄花分外香。\n一年一度秋风劲，不似春光。\n胜似春光，寥廓江天万里霜。"},{"title":"浪淘沙·北戴河","title_url":"https://www.marxists.org/chinese/maozedong/1968/4-098.htm","text":"大雨落幽燕，白浪滔天，\n秦皇岛外打鱼船。\n一片汪洋都不见，\n知向谁边？\n\n往事越千年，魏武挥鞭，\n东临碣石有遗篇。\n萧瑟秋风今又是，\n换了人间。"},{"title":"卜算子·咏梅","title_url":"https://www.marxists.org/chinese/maozedong/1968/4-098.htm","text":"风雨送春归，\n飞雪迎春到。\n已是悬崖百丈冰，\n犹有花枝俏。\n俏也不争春，\n只把春来报。\n待到山花烂漫时，\n她在丛中笑。"}]}</script><script id="site-music-dataset" type="application/json">[{"id":"mao-1","title":"毛_1","artist":"站点配乐","src":"/media/site-shell/mao-1.mp3"}]</script><script defer src="/js/site-music-player.js"></script><script defer src="/js/site-media-shell.js"></script><script defer src="/js/ideology-cards.js"></script><script defer src="/js/industry-focus.js"></script><script defer src="/js/industry-source-card-helpers.js"></script><script defer src="/js/industry-source-card.js"></script><script defer src="/js/aside-scroll.js"></script><script defer src="/js/home-entry-hero.js"></script></div></body></html>

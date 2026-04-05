@@ -1,0 +1,463 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>月报 2026-03 | 西风烈</title><meta name="author" content="wsysgz"><meta name="copyright" content="wsysgz"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="2026 年 3 月的产业情报主线，已经从“模型单点炫技”转向“企业级 agent 落地 + AI 基础设施扩容 + 区域级部署”。上旬由 GPT-5.4、制造业 AI 和企业前台 agent 案例打开节奏，中旬被 NVIDIA 的 AI ...">
+<meta property="og:type" content="article">
+<meta property="og:title" content="月报 2026-03">
+<meta property="og:url" content="https://wsysgz.github.io/industry-focus/monthly/2026-03/index.html">
+<meta property="og:site_name" content="西风烈">
+<meta property="og:description" content="2026 年 3 月的产业情报主线，已经从“模型单点炫技”转向“企业级 agent 落地 + AI 基础设施扩容 + 区域级部署”。上旬由 GPT-5.4、制造业 AI 和企业前台 agent 案例打开节奏，中旬被 NVIDIA 的 AI ...">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://wsysgz.github.io/blog_img/industry-focus-monthly-2026-03.jpg">
+<meta property="article:published_time" content="2026-04-04T21:17:09.000Z">
+<meta property="article:modified_time" content="2026-04-05T05:22:10.781Z">
+<meta property="article:author" content="wsysgz">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="AI_analyze">
+<meta property="article:tag" content="IT">
+<meta property="article:tag" content="电子信息">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wsysgz.github.io/blog_img/industry-focus-monthly-2026-03.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "月报 2026-03",
+  "url": "https://wsysgz.github.io/industry-focus/monthly/2026-03/",
+  "image": "https://wsysgz.github.io/blog_img/industry-focus-monthly-2026-03.jpg",
+  "datePublished": "2026-04-04T21:17:09.000Z",
+  "dateModified": "2026-04-05T05:22:10.781Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "wsysgz",
+      "url": "https://wsysgz.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://wsysgz.github.io/industry-focus/monthly/2026-03/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":300,"languages":{"author":"作者: wsysgz","link":"链接: ","source":"来源: 西风烈","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '月报 2026-03',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/custom.css"><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewbox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"/><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"/><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"/><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"/></symbol><symbol id="icon-moon" viewbox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"/><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"/></symbol></svg><meta name="generator" content="Hexo 8.1.1"></head><body><div class="site-media-shell" id="site-media-shell" aria-hidden="true" data-media-state="poster" data-motion-mode="full"><img class="site-media-shell__poster" src="/media/site-shell/beijing-poster.jpg" alt decoding="async" loading="eager"><video class="site-media-shell__video" src="/media/site-shell/beijing-bg.mp4" poster="/media/site-shell/beijing-poster.jpg" muted loop playsinline preload="metadata" data-site-media-video></video><div class="site-media-shell__veil"></div></div><div class="site-music-player" id="site-music-player" aria-label="站点音乐播放器" role="group"><strong class="site-music-player__title" data-site-music-title>毛_1</strong><div class="site-music-player__controls"><button class="site-music-player__button" type="button" data-site-music-action="prev" aria-label="上一首" title="上一首"><svg class="site-music-player__glyph" viewbox="0 0 20 20" aria-hidden="true"><path d="M12.8 4.6L7.2 10l5.6 5.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button class="site-music-player__button site-music-player__button--primary" type="button" data-site-music-action="toggle" aria-label="播放" title="播放"><svg class="site-music-player__glyph site-music-player__glyph--play" viewbox="0 0 20 20" aria-hidden="true"><path d="M6 4L16 10L6 16Z"/></svg><svg class="site-music-player__glyph site-music-player__glyph--pause" viewbox="0 0 20 20" aria-hidden="true"><path d="M6 4H9V16H6zM11 4H14V16H11z"/></svg></button><button class="site-music-player__button" type="button" data-site-music-action="next" aria-label="下一首" title="下一首"><svg class="site-music-player__glyph" viewbox="0 0 20 20" aria-hidden="true"><path d="M7.2 4.6L12.8 10l-5.6 5.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/industry-focus/"><i class="fa-fw fas fa-satellite-dish"></i><span> 产业情报</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(/blog_img/industry-focus-monthly-2026-03.jpg);"><nav id="nav"><!-- 左侧博客信息区域--><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">西风烈</span></a><a class="nav-page-title" href="/"><span class="site-name">月报 2026-03</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><!-- 新增的导航菜单容器（居中布局关键）--><div id="nav-menus-container"><!-- 菜单主体部分--><div id="menus"><!-- 菜单项--><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/industry-focus/"><i class="fa-fw fas fa-satellite-dish"></i><span> 产业情报</span></a></div></div></div></div><!-- 右侧功能区域（新增容器）--><div id="nav-right-container"><!-- 搜索按钮（移动到右侧）--><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><!-- 移动端汉堡菜单按钮--><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">月报 2026-03</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-04-04T21:17:09.000Z" title="发表于 2026-04-05 05:17:09">2026-04-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-04-05T05:22:10.781Z" title="更新于 2026-04-05 13:22:10">2026-04-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BA%A7%E4%B8%9A%E6%83%85%E6%8A%A5/">产业情报</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BA%A7%E4%B8%9A%E6%83%85%E6%8A%A5/%E6%9C%88%E6%8A%A5/">月报</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">3.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>12分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id data-flag-title><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div class="monthly-report-stream" data-monthly-index="/industry-focus-data/monthly-index.json" data-visible-count="3">
+  <div class="industry-focus-loading">加载最近月报卡片中...</div>
+</div>
+
+<blockquote>
+<p>周报归档：<a href="/industry-focus/weekly/">&#x2F;industry-focus&#x2F;weekly&#x2F;</a></p>
+</blockquote>
+<h2 id="月度总览"><a href="#月度总览" class="headerlink" title="月度总览"></a>月度总览</h2><p>2026 年 3 月的产业情报主线，已经从“模型单点炫技”转向“企业级 agent 落地 + AI 基础设施扩容 + 区域级部署”。上旬由 GPT-5.4、制造业 AI 和企业前台 agent 案例打开节奏，中旬被 NVIDIA 的 AI factory &#x2F; agentic inference 叙事抬升，月底则由韩国、泰国等区域级投资与 Gemini 产品整合把主线推进到规模化落地。</p>
+<h2 id="本月主线判断"><a href="#本月主线判断" class="headerlink" title="本月主线判断"></a>本月主线判断</h2><ul>
+<li>NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛 成为本期最强锚点，说明市场正在围绕 算力、推理效率与 AI 工厂 重新分配关注度和资源。</li>
+<li>人工智能 &#x2F; AI 侧由 OpenAI 发布 GPT-5.4，模型竞争回到高可靠推理与编码 带动，行业重心继续从“单点能力展示”转向“可规模化部署与可交付闭环”。</li>
+<li>Anthropic 投入 1 亿美元建设 Claude Partner Network 反映出生态、治理、区域协同或资本开支正在前移为产业放量前的关键前提。</li>
+</ul>
+<h2 id="分赛道观察"><a href="#分赛道观察" class="headerlink" title="分赛道观察"></a>分赛道观察</h2><h3 id="电子信息"><a href="#电子信息" class="headerlink" title="电子信息"></a>电子信息</h3><p>电子信息 本期由 NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛，三星发布 AI 工厂 2030 路线，制造端智能化提速、NVIDIA 联合 Marvell 推进 NVLink Fusion，开放互联升温 形成协同呼应。Vera Rubin 是 3 月中旬最具支配力的基础设施信号之一，代表市场已从训练导向迅速切换到 agentic inference 导向。 接下来数月算力平台的竞争会继续围绕推理成本、功耗与大规模互联展开，AI 工厂会成为产业共识语言。</p>
+<ul>
+<li>重点信号：NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛、三星发布 AI 工厂 2030 路线，制造端智能化提速、NVIDIA 联合 Marvell 推进 NVLink Fusion，开放互联升温</li>
+</ul>
+<h3 id="人工智能-AI"><a href="#人工智能-AI" class="headerlink" title="人工智能 &#x2F; AI"></a>人工智能 &#x2F; AI</h3><p>人工智能 &#x2F; AI 本期由 NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛，OpenAI 发布 GPT-5.4，模型竞争回到高可靠推理与编码、Anthropic 投入 1 亿美元建设 Claude Partner Network 形成协同呼应。Vera Rubin 是 3 月中旬最具支配力的基础设施信号之一，代表市场已从训练导向迅速切换到 agentic inference 导向。 接下来数月算力平台的竞争会继续围绕推理成本、功耗与大规模互联展开，AI 工厂会成为产业共识语言。</p>
+<ul>
+<li>重点信号：NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛、OpenAI 发布 GPT-5.4，模型竞争回到高可靠推理与编码、Anthropic 投入 1 亿美元建设 Claude Partner Network</li>
+</ul>
+<h3 id="IT-软件基础设施"><a href="#IT-软件基础设施" class="headerlink" title="IT &#x2F; 软件基础设施"></a>IT &#x2F; 软件基础设施</h3><p>IT &#x2F; 软件基础设施 本期由 NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛，OpenAI 发布 GPT-5.4，模型竞争回到高可靠推理与编码、Anthropic 投入 1 亿美元建设 Claude Partner Network 形成协同呼应。Vera Rubin 是 3 月中旬最具支配力的基础设施信号之一，代表市场已从训练导向迅速切换到 agentic inference 导向。 接下来数月算力平台的竞争会继续围绕推理成本、功耗与大规模互联展开，AI 工厂会成为产业共识语言。</p>
+<ul>
+<li>重点信号：NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛、OpenAI 发布 GPT-5.4，模型竞争回到高可靠推理与编码、Anthropic 投入 1 亿美元建设 Claude Partner Network</li>
+</ul>
+<h2 id="风险与变量"><a href="#风险与变量" class="headerlink" title="风险与变量"></a>风险与变量</h2><ul>
+<li>当前样本覆盖为 8&#x2F;31 天，结论更适合判断主线和拐点，不代表穷尽了本期全部事件。</li>
+<li>回落信号 三星发布 AI 工厂 2030 路线，制造端智能化提速 说明旧叙事正在失去边际增量，资源会继续向更可交付的方向集中。</li>
+</ul>
+<h2 id="下月与季度观察"><a href="#下月与季度观察" class="headerlink" title="下月与季度观察"></a>下月与季度观察</h2><ul>
+<li>接下来数月算力平台的竞争会继续围绕推理成本、功耗与大规模互联展开，AI 工厂会成为产业共识语言。</li>
+<li>未来数周企业评估标准会继续向推理质量、工程接入效率和长任务稳定性倾斜，模型底座升级仍是 agent 落地的前提条件。</li>
+<li>伙伴生态会成为企业级模型平台放量的关键分销与交付通道，咨询与实施能力的重要性会继续抬升。</li>
+<li>区域级 AI 基础设施与产业协同会成为下一阶段落地速度最快的市场抓手，亚洲市场的主权化部署将继续增多。</li>
+<li>从季度视角看，接下来一个月的竞争重点会继续落在企业级交付、区域化部署与 AI 基础设施资本开支。</li>
+</ul>
+<h2 id="关键锚点事件"><a href="#关键锚点事件" class="headerlink" title="关键锚点事件"></a>关键锚点事件</h2><h3 id="1-NVIDIA-Vera-Rubin-平台开启-Agentic-AI-基础设施竞赛"><a href="#1-NVIDIA-Vera-Rubin-平台开启-Agentic-AI-基础设施竞赛" class="headerlink" title="1. NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛"></a>1. NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛</h3><ul>
+<li>日期：2026-03-19</li>
+<li>来源：NVIDIA</li>
+<li>摘要：NVIDIA 于 2026 年 3 月 19 日发布 Vera Rubin 平台，把 AI factories、推理吞吐、能效和 token 成本压缩推到新的竞赛高度。</li>
+<li>研判：Vera Rubin 是 3 月中旬最具支配力的基础设施信号之一，代表市场已从训练导向迅速切换到 agentic inference 导向。</li>
+<li>链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform">https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform</a></li>
+</ul>
+<h3 id="2-OpenAI-发布-GPT-5-4，模型竞争回到高可靠推理与编码"><a href="#2-OpenAI-发布-GPT-5-4，模型竞争回到高可靠推理与编码" class="headerlink" title="2. OpenAI 发布 GPT-5.4，模型竞争回到高可靠推理与编码"></a>2. OpenAI 发布 GPT-5.4，模型竞争回到高可靠推理与编码</h3><ul>
+<li>日期：2026-03-05</li>
+<li>来源：OpenAI</li>
+<li>摘要：OpenAI 于 2026 年 3 月 5 日发布 GPT-5.4，市场关注点重新聚焦到复杂推理、代码生成和多步骤任务的稳定表现。</li>
+<li>研判：GPT-5.4 拉高了 3 月上旬的模型上限预期，也把行业注意力从单轮炫技带回可持续生产力。</li>
+<li>链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://openai.com/index/introducing-gpt-5-4/">https://openai.com/index/introducing-gpt-5-4/</a></li>
+</ul>
+<h3 id="3-Anthropic-投入-1-亿美元建设-Claude-Partner-Network"><a href="#3-Anthropic-投入-1-亿美元建设-Claude-Partner-Network" class="headerlink" title="3. Anthropic 投入 1 亿美元建设 Claude Partner Network"></a>3. Anthropic 投入 1 亿美元建设 Claude Partner Network</h3><ul>
+<li>日期：2026-03-12</li>
+<li>来源：Anthropic</li>
+<li>摘要：Anthropic 于 2026 年 3 月 12 日宣布向 Claude Partner Network 投入 1 亿美元，覆盖伙伴培训、技术支持、联合市场与认证体系。</li>
+<li>研判：这条信号表明 2026 年的竞争不只在模型能力，也在谁能最快把模型交付到企业组织与行业流程里。</li>
+<li>链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.anthropic.com/news/claude-partner-network">https://www.anthropic.com/news/claude-partner-network</a></li>
+</ul>
+<h3 id="4-微软将韩国定位为全球-AI-Hub，区域级部署开始放量"><a href="#4-微软将韩国定位为全球-AI-Hub，区域级部署开始放量" class="headerlink" title="4. 微软将韩国定位为全球 AI Hub，区域级部署开始放量"></a>4. 微软将韩国定位为全球 AI Hub，区域级部署开始放量</h3><ul>
+<li>日期：2026-03-26</li>
+<li>来源：Microsoft</li>
+<li>摘要：Microsoft 于 2026 年 3 月 26 日提出把韩国推进为全球 AI Hub，强调从实验走向大规模 frontier transformation。</li>
+<li>研判：韩国信号说明 3 月下旬的竞争重心正在从单公司试点走向国家级、区域级与产业集群级部署。</li>
+<li>链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://news.microsoft.com/source/asia/2026/03/26/microsoft-positions-korea-as-a-global-ai-hub-moving-beyond-experimentation-to-full-scale-frontier-transformation/?lang=ko">https://news.microsoft.com/source/asia/2026/03/26/microsoft-positions-korea-as-a-global-ai-hub-moving-beyond-experimentation-to-full-scale-frontier-transformation/?lang=ko</a></li>
+</ul>
+<h3 id="5-Gemini-March-Drop-加速个人智能与跨应用迁移"><a href="#5-Gemini-March-Drop-加速个人智能与跨应用迁移" class="headerlink" title="5. Gemini March Drop 加速个人智能与跨应用迁移"></a>5. Gemini March Drop 加速个人智能与跨应用迁移</h3><ul>
+<li>日期：2026-03-27</li>
+<li>来源：blog.google</li>
+<li>摘要：Google 于 2026 年 3 月 27 日在 Gemini Drop 中加入跨服务聊天记忆迁移、Personal Intelligence 扩展、Google TV 体验和 Lyria 3 Pro 等更新。</li>
+<li>研判：3 月下旬产品层主线开始回到“谁更像完整入口”，Gemini 用生态整合而不是单点功能来强化竞争力。</li>
+<li>链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-updates-march-2026/">https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-updates-march-2026/</a></li>
+</ul>
+<h3 id="6-微软推出-Frontier-Suite，企业级-AI-开始绑定信任框架"><a href="#6-微软推出-Frontier-Suite，企业级-AI-开始绑定信任框架" class="headerlink" title="6. 微软推出 Frontier Suite，企业级 AI 开始绑定信任框架"></a>6. 微软推出 Frontier Suite，企业级 AI 开始绑定信任框架</h3><ul>
+<li>日期：2026-03-11</li>
+<li>来源：Microsoft</li>
+<li>摘要：Microsoft 于 2026 年 3 月 11 日推出 built on intelligence and trust 的 Frontier Suite，把 Agent 365 与企业信任控制一起打包给市场。</li>
+<li>研判：Frontier Suite 把 3 月中旬的商业化主线拉向“可信交付”，表明真正大规模落地需要模型、产品和管控并进。</li>
+<li>链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://news.microsoft.com/emea/2026/03/11/introducing-the-first-frontier-suite-built-on-intelligence-trust/">https://news.microsoft.com/emea/2026/03/11/introducing-the-first-frontier-suite-built-on-intelligence-trust/</a></li>
+</ul>
+<h3 id="7-三星发布-AI-工厂-2030-路线，制造端智能化提速"><a href="#7-三星发布-AI-工厂-2030-路线，制造端智能化提速" class="headerlink" title="7. 三星发布 AI 工厂 2030 路线，制造端智能化提速"></a>7. 三星发布 AI 工厂 2030 路线，制造端智能化提速</h3><ul>
+<li>日期：2026-03-03</li>
+<li>来源：Samsung</li>
+<li>摘要：Samsung 在 2026 年 3 月 3 日于 MWC 2026 期间提出 AI-driven factories 路线，强调以 agentic AI、数字孪生和全球制造协同推动工厂体系升级。</li>
+<li>研判：这条信号把 3 月上旬的产业叙事拉回真实生产场景，说明 AI 价值验证正在从办公辅助扩展到制造系统改造。</li>
+<li>链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://news.samsung.com/id/samsung-electronics-announces-a-strategy-to-transform-global-manufacturing-into-ai-driven-factories-by-2030">https://news.samsung.com/id/samsung-electronics-announces-a-strategy-to-transform-global-manufacturing-into-ai-driven-factories-by-2030</a></li>
+</ul>
+<h3 id="8-NVIDIA-联合-Marvell-推进-NVLink-Fusion，开放互联升温"><a href="#8-NVIDIA-联合-Marvell-推进-NVLink-Fusion，开放互联升温" class="headerlink" title="8. NVIDIA 联合 Marvell 推进 NVLink Fusion，开放互联升温"></a>8. NVIDIA 联合 Marvell 推进 NVLink Fusion，开放互联升温</h3><ul>
+<li>日期：2026-03-31</li>
+<li>来源：NVIDIA</li>
+<li>摘要：NVIDIA 于 2026 年 3 月 31 日宣布与 Marvell 合作推进 NVLink Fusion，增强下一代 AI 基础设施在互联与组合上的灵活性。</li>
+<li>研判：这条信号说明 3 月末的算力竞争已从芯片单点延伸到互联协议与整套系统生态。</li>
+<li>链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://nvidianews.nvidia.com/news/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion">https://nvidianews.nvidia.com/news/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion</a></li>
+</ul>
+<h2 id="量化证据附录"><a href="#量化证据附录" class="headerlink" title="量化证据附录"></a>量化证据附录</h2><h3 id="1-NVIDIA-Vera-Rubin-平台开启-Agentic-AI-基础设施竞赛-1"><a href="#1-NVIDIA-Vera-Rubin-平台开启-Agentic-AI-基础设施竞赛-1" class="headerlink" title="1. NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛"></a>1. NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛</h3><ul>
+<li>综合评分：95</li>
+<li>赛道：电子信息</li>
+<li>趋势判断：Vera Rubin 是 3 月中旬最具支配力的基础设施信号之一，代表市场已从训练导向迅速切换到 agentic inference 导向。</li>
+<li>预测延伸：接下来数月算力平台的竞争会继续围绕推理成本、功耗与大规模互联展开，AI 工厂会成为产业共识语言。</li>
+<li>来源链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform">https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform</a></li>
+</ul>
+<h3 id="2-OpenAI-发布-GPT-5-4，模型竞争回到高可靠推理与编码-1"><a href="#2-OpenAI-发布-GPT-5-4，模型竞争回到高可靠推理与编码-1" class="headerlink" title="2. OpenAI 发布 GPT-5.4，模型竞争回到高可靠推理与编码"></a>2. OpenAI 发布 GPT-5.4，模型竞争回到高可靠推理与编码</h3><ul>
+<li>综合评分：93</li>
+<li>赛道：人工智能 &#x2F; AI</li>
+<li>趋势判断：GPT-5.4 拉高了 3 月上旬的模型上限预期，也把行业注意力从单轮炫技带回可持续生产力。</li>
+<li>预测延伸：未来数周企业评估标准会继续向推理质量、工程接入效率和长任务稳定性倾斜，模型底座升级仍是 agent 落地的前提条件。</li>
+<li>来源链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://openai.com/index/introducing-gpt-5-4/">https://openai.com/index/introducing-gpt-5-4/</a></li>
+</ul>
+<h3 id="3-Anthropic-投入-1-亿美元建设-Claude-Partner-Network-1"><a href="#3-Anthropic-投入-1-亿美元建设-Claude-Partner-Network-1" class="headerlink" title="3. Anthropic 投入 1 亿美元建设 Claude Partner Network"></a>3. Anthropic 投入 1 亿美元建设 Claude Partner Network</h3><ul>
+<li>综合评分：90</li>
+<li>赛道：人工智能 &#x2F; AI</li>
+<li>趋势判断：这条信号表明 2026 年的竞争不只在模型能力，也在谁能最快把模型交付到企业组织与行业流程里。</li>
+<li>预测延伸：伙伴生态会成为企业级模型平台放量的关键分销与交付通道，咨询与实施能力的重要性会继续抬升。</li>
+<li>来源链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.anthropic.com/news/claude-partner-network">https://www.anthropic.com/news/claude-partner-network</a></li>
+</ul>
+<h3 id="4-微软将韩国定位为全球-AI-Hub，区域级部署开始放量-1"><a href="#4-微软将韩国定位为全球-AI-Hub，区域级部署开始放量-1" class="headerlink" title="4. 微软将韩国定位为全球 AI Hub，区域级部署开始放量"></a>4. 微软将韩国定位为全球 AI Hub，区域级部署开始放量</h3><ul>
+<li>综合评分：88</li>
+<li>赛道：IT &#x2F; 软件基础设施</li>
+<li>趋势判断：韩国信号说明 3 月下旬的竞争重心正在从单公司试点走向国家级、区域级与产业集群级部署。</li>
+<li>预测延伸：区域级 AI 基础设施与产业协同会成为下一阶段落地速度最快的市场抓手，亚洲市场的主权化部署将继续增多。</li>
+<li>来源链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://news.microsoft.com/source/asia/2026/03/26/microsoft-positions-korea-as-a-global-ai-hub-moving-beyond-experimentation-to-full-scale-frontier-transformation/?lang=ko">https://news.microsoft.com/source/asia/2026/03/26/microsoft-positions-korea-as-a-global-ai-hub-moving-beyond-experimentation-to-full-scale-frontier-transformation/?lang=ko</a></li>
+</ul>
+<h3 id="5-Gemini-March-Drop-加速个人智能与跨应用迁移-1"><a href="#5-Gemini-March-Drop-加速个人智能与跨应用迁移-1" class="headerlink" title="5. Gemini March Drop 加速个人智能与跨应用迁移"></a>5. Gemini March Drop 加速个人智能与跨应用迁移</h3><ul>
+<li>综合评分：87</li>
+<li>赛道：人工智能 &#x2F; AI</li>
+<li>趋势判断：3 月下旬产品层主线开始回到“谁更像完整入口”，Gemini 用生态整合而不是单点功能来强化竞争力。</li>
+<li>预测延伸：消费端 AI 会继续沿着跨应用记忆、长上下文和多终端体验整合演进，产品层整合能力会比单功能更新更重要。</li>
+<li>来源链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-updates-march-2026/">https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-updates-march-2026/</a></li>
+</ul>
+<h3 id="6-微软推出-Frontier-Suite，企业级-AI-开始绑定信任框架-1"><a href="#6-微软推出-Frontier-Suite，企业级-AI-开始绑定信任框架-1" class="headerlink" title="6. 微软推出 Frontier Suite，企业级 AI 开始绑定信任框架"></a>6. 微软推出 Frontier Suite，企业级 AI 开始绑定信任框架</h3><ul>
+<li>综合评分：86</li>
+<li>赛道：IT &#x2F; 软件基础设施</li>
+<li>趋势判断：Frontier Suite 把 3 月中旬的商业化主线拉向“可信交付”，表明真正大规模落地需要模型、产品和管控并进。</li>
+<li>预测延伸：接下来企业采购会更看重安全、合规与代理治理的一体化交付，而不是只比较模型参数和单点功能。</li>
+<li>来源链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://news.microsoft.com/emea/2026/03/11/introducing-the-first-frontier-suite-built-on-intelligence-trust/">https://news.microsoft.com/emea/2026/03/11/introducing-the-first-frontier-suite-built-on-intelligence-trust/</a></li>
+</ul>
+<h3 id="7-三星发布-AI-工厂-2030-路线，制造端智能化提速-1"><a href="#7-三星发布-AI-工厂-2030-路线，制造端智能化提速-1" class="headerlink" title="7. 三星发布 AI 工厂 2030 路线，制造端智能化提速"></a>7. 三星发布 AI 工厂 2030 路线，制造端智能化提速</h3><ul>
+<li>综合评分：85</li>
+<li>赛道：电子信息</li>
+<li>趋势判断：这条信号把 3 月上旬的产业叙事拉回真实生产场景，说明 AI 价值验证正在从办公辅助扩展到制造系统改造。</li>
+<li>预测延伸：电子制造业的下一轮竞争会更快从局部试点转向整厂级调度优化，工厂数据、边缘算力和工业软件的融合会持续升温。</li>
+<li>来源链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://news.samsung.com/id/samsung-electronics-announces-a-strategy-to-transform-global-manufacturing-into-ai-driven-factories-by-2030">https://news.samsung.com/id/samsung-electronics-announces-a-strategy-to-transform-global-manufacturing-into-ai-driven-factories-by-2030</a></li>
+</ul>
+<h3 id="8-NVIDIA-联合-Marvell-推进-NVLink-Fusion，开放互联升温-1"><a href="#8-NVIDIA-联合-Marvell-推进-NVLink-Fusion，开放互联升温-1" class="headerlink" title="8. NVIDIA 联合 Marvell 推进 NVLink Fusion，开放互联升温"></a>8. NVIDIA 联合 Marvell 推进 NVLink Fusion，开放互联升温</h3><ul>
+<li>综合评分：83</li>
+<li>赛道：电子信息</li>
+<li>趋势判断：这条信号说明 3 月末的算力竞争已从芯片单点延伸到互联协议与整套系统生态。</li>
+<li>预测延伸：开放互联和机架级协同将成为 2026 年下半年 AI 基建采购的重要比较项，平台锁定方式会变得更系统化。</li>
+<li>来源链接：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://nvidianews.nvidia.com/news/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion">https://nvidianews.nvidia.com/news/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion</a></li>
+</ul>
+<h2 id="覆盖与备注"><a href="#覆盖与备注" class="headerlink" title="覆盖与备注"></a>覆盖与备注</h2><ul>
+<li>报告周期：月报周期 (2026-03)</li>
+<li>覆盖说明：月报采用官方公开信息进行历史回填，覆盖 8&#x2F;31 天；未覆盖日期不代表无事件，仅表示本次未纳入具有代表性的公开样本。</li>
+<li>已采样日期：2026-03-03、2026-03-05、2026-03-11、2026-03-12、2026-03-19、2026-03-26、2026-03-27、2026-03-31</li>
+<li>缺失日期预览：2026-03-01、2026-03-02、2026-03-04、2026-03-06、2026-03-07、2026-03-08、2026-03-09、2026-03-10 等 23 天</li>
+<li>月报采用官方公开信息进行历史回填，覆盖 8&#x2F;31 天；未覆盖日期不代表无事件，仅表示本次未纳入具有代表性的公开样本。</li>
+<li>本月回填优先采用 OpenAI、Anthropic、Google、Microsoft、NVIDIA、Samsung 等官方公开信息。</li>
+<li>主线一：模型底座升级与企业级 trust &#x2F; partner 体系并进。</li>
+<li>主线二：AI 工厂、能效、电力与互联成为电子信息与基础设施共同议题。</li>
+<li>主线三：韩国、泰国等区域级投资显示 AI 部署正在从试点走向产业层级。</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://wsysgz.github.io">wsysgz</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://wsysgz.github.io/industry-focus/monthly/2026-03/">https://wsysgz.github.io/industry-focus/monthly/2026-03/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external nofollow noopener noreferrer">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://wsysgz.github.io" target="_blank">西风烈</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/AI/">AI</a><a class="post-meta__tags" href="/tags/%E7%94%B5%E5%AD%90%E4%BF%A1%E6%81%AF/">电子信息</a><a class="post-meta__tags" href="/tags/IT/">IT</a><a class="post-meta__tags" href="/tags/AI-analyze/">AI_analyze</a></div><div class="post-share"><div class="social-share" data-image="/blog_img/industry-focus-monthly-2026-03.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/posts/c0d3a102/" title="让 Codex 接管思源笔记，并打通 Hexo 博客仓库"><img class="cover" src="/blog_img/codex-siyuan-workspace-bridge.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">让 Codex 接管思源笔记，并打通 Hexo 博客仓库</div></div><div class="info-2"><div class="info-item-1">记录把 Codex、思源笔记与 Hexo 博客仓库接通的过程，让 AI 能直接搜索、读取、写入思源，再落地到本地代码和博客内容。</div></div></div></a></nav><hr class="custom-hr"><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info-name">wsysgz</div><div class="author-info-description">一饮一啄，莫非前定</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/wsysgz"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/wsysgz" target="_blank" title="Github" rel="external nofollow noopener noreferrer"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/522929583?spm_id_from=333.1387.0.0" target="_blank" title="Bilibili" rel="external nofollow noopener noreferrer"><i class="fab fa-bilibili" style="color: #fb7299;"></i></a><a class="social-icon" href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=2416007848@qq.com" target="_blank" title="Email" rel="external nofollow noopener noreferrer"><i class="fas fa-envelope" style="color: #12B7F5;"></i></a></div></div><div class="card-widget card-announcement" id="announcement-poem-card"><div class="announcement-poem"><a class="announcement-poem__title" href="https://www.marxists.org/chinese/maozedong/1968/4-098.htm" target="_blank" rel="external nofollow noopener noreferrer">忆秦娥·娄山关</a><div class="announcement-poem__line">西风烈，
+长空雁叫霜晨月。
+霜晨月，
+马蹄声碎，喇叭声咽。
+雄关漫道真如铁，
+而今迈步从头越。
+从头越，
+苍山如海，残阳如血。</div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%88%E5%BA%A6%E6%80%BB%E8%A7%88"><span class="toc-number">1.</span> <span class="toc-text">月度总览</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E6%9C%88%E4%B8%BB%E7%BA%BF%E5%88%A4%E6%96%AD"><span class="toc-number">2.</span> <span class="toc-text">本月主线判断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E8%B5%9B%E9%81%93%E8%A7%82%E5%AF%9F"><span class="toc-number">3.</span> <span class="toc-text">分赛道观察</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B5%E5%AD%90%E4%BF%A1%E6%81%AF"><span class="toc-number">3.1.</span> <span class="toc-text">电子信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-AI"><span class="toc-number">3.2.</span> <span class="toc-text">人工智能 &#x2F; AI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IT-%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="toc-number">3.3.</span> <span class="toc-text">IT &#x2F; 软件基础设施</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A3%8E%E9%99%A9%E4%B8%8E%E5%8F%98%E9%87%8F"><span class="toc-number">4.</span> <span class="toc-text">风险与变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E6%9C%88%E4%B8%8E%E5%AD%A3%E5%BA%A6%E8%A7%82%E5%AF%9F"><span class="toc-number">5.</span> <span class="toc-text">下月与季度观察</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E9%94%9A%E7%82%B9%E4%BA%8B%E4%BB%B6"><span class="toc-number">6.</span> <span class="toc-text">关键锚点事件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-NVIDIA-Vera-Rubin-%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%90%AF-Agentic-AI-%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E7%AB%9E%E8%B5%9B"><span class="toc-number">6.1.</span> <span class="toc-text">1. NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-OpenAI-%E5%8F%91%E5%B8%83-GPT-5-4%EF%BC%8C%E6%A8%A1%E5%9E%8B%E7%AB%9E%E4%BA%89%E5%9B%9E%E5%88%B0%E9%AB%98%E5%8F%AF%E9%9D%A0%E6%8E%A8%E7%90%86%E4%B8%8E%E7%BC%96%E7%A0%81"><span class="toc-number">6.2.</span> <span class="toc-text">2. OpenAI 发布 GPT-5.4，模型竞争回到高可靠推理与编码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Anthropic-%E6%8A%95%E5%85%A5-1-%E4%BA%BF%E7%BE%8E%E5%85%83%E5%BB%BA%E8%AE%BE-Claude-Partner-Network"><span class="toc-number">6.3.</span> <span class="toc-text">3. Anthropic 投入 1 亿美元建设 Claude Partner Network</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%BE%AE%E8%BD%AF%E5%B0%86%E9%9F%A9%E5%9B%BD%E5%AE%9A%E4%BD%8D%E4%B8%BA%E5%85%A8%E7%90%83-AI-Hub%EF%BC%8C%E5%8C%BA%E5%9F%9F%E7%BA%A7%E9%83%A8%E7%BD%B2%E5%BC%80%E5%A7%8B%E6%94%BE%E9%87%8F"><span class="toc-number">6.4.</span> <span class="toc-text">4. 微软将韩国定位为全球 AI Hub，区域级部署开始放量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Gemini-March-Drop-%E5%8A%A0%E9%80%9F%E4%B8%AA%E4%BA%BA%E6%99%BA%E8%83%BD%E4%B8%8E%E8%B7%A8%E5%BA%94%E7%94%A8%E8%BF%81%E7%A7%BB"><span class="toc-number">6.5.</span> <span class="toc-text">5. Gemini March Drop 加速个人智能与跨应用迁移</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%BE%AE%E8%BD%AF%E6%8E%A8%E5%87%BA-Frontier-Suite%EF%BC%8C%E4%BC%81%E4%B8%9A%E7%BA%A7-AI-%E5%BC%80%E5%A7%8B%E7%BB%91%E5%AE%9A%E4%BF%A1%E4%BB%BB%E6%A1%86%E6%9E%B6"><span class="toc-number">6.6.</span> <span class="toc-text">6. 微软推出 Frontier Suite，企业级 AI 开始绑定信任框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E4%B8%89%E6%98%9F%E5%8F%91%E5%B8%83-AI-%E5%B7%A5%E5%8E%82-2030-%E8%B7%AF%E7%BA%BF%EF%BC%8C%E5%88%B6%E9%80%A0%E7%AB%AF%E6%99%BA%E8%83%BD%E5%8C%96%E6%8F%90%E9%80%9F"><span class="toc-number">6.7.</span> <span class="toc-text">7. 三星发布 AI 工厂 2030 路线，制造端智能化提速</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-NVIDIA-%E8%81%94%E5%90%88-Marvell-%E6%8E%A8%E8%BF%9B-NVLink-Fusion%EF%BC%8C%E5%BC%80%E6%94%BE%E4%BA%92%E8%81%94%E5%8D%87%E6%B8%A9"><span class="toc-number">6.8.</span> <span class="toc-text">8. NVIDIA 联合 Marvell 推进 NVLink Fusion，开放互联升温</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8F%E5%8C%96%E8%AF%81%E6%8D%AE%E9%99%84%E5%BD%95"><span class="toc-number">7.</span> <span class="toc-text">量化证据附录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-NVIDIA-Vera-Rubin-%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%90%AF-Agentic-AI-%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E7%AB%9E%E8%B5%9B-1"><span class="toc-number">7.1.</span> <span class="toc-text">1. NVIDIA Vera Rubin 平台开启 Agentic AI 基础设施竞赛</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-OpenAI-%E5%8F%91%E5%B8%83-GPT-5-4%EF%BC%8C%E6%A8%A1%E5%9E%8B%E7%AB%9E%E4%BA%89%E5%9B%9E%E5%88%B0%E9%AB%98%E5%8F%AF%E9%9D%A0%E6%8E%A8%E7%90%86%E4%B8%8E%E7%BC%96%E7%A0%81-1"><span class="toc-number">7.2.</span> <span class="toc-text">2. OpenAI 发布 GPT-5.4，模型竞争回到高可靠推理与编码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Anthropic-%E6%8A%95%E5%85%A5-1-%E4%BA%BF%E7%BE%8E%E5%85%83%E5%BB%BA%E8%AE%BE-Claude-Partner-Network-1"><span class="toc-number">7.3.</span> <span class="toc-text">3. Anthropic 投入 1 亿美元建设 Claude Partner Network</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%BE%AE%E8%BD%AF%E5%B0%86%E9%9F%A9%E5%9B%BD%E5%AE%9A%E4%BD%8D%E4%B8%BA%E5%85%A8%E7%90%83-AI-Hub%EF%BC%8C%E5%8C%BA%E5%9F%9F%E7%BA%A7%E9%83%A8%E7%BD%B2%E5%BC%80%E5%A7%8B%E6%94%BE%E9%87%8F-1"><span class="toc-number">7.4.</span> <span class="toc-text">4. 微软将韩国定位为全球 AI Hub，区域级部署开始放量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Gemini-March-Drop-%E5%8A%A0%E9%80%9F%E4%B8%AA%E4%BA%BA%E6%99%BA%E8%83%BD%E4%B8%8E%E8%B7%A8%E5%BA%94%E7%94%A8%E8%BF%81%E7%A7%BB-1"><span class="toc-number">7.5.</span> <span class="toc-text">5. Gemini March Drop 加速个人智能与跨应用迁移</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%BE%AE%E8%BD%AF%E6%8E%A8%E5%87%BA-Frontier-Suite%EF%BC%8C%E4%BC%81%E4%B8%9A%E7%BA%A7-AI-%E5%BC%80%E5%A7%8B%E7%BB%91%E5%AE%9A%E4%BF%A1%E4%BB%BB%E6%A1%86%E6%9E%B6-1"><span class="toc-number">7.6.</span> <span class="toc-text">6. 微软推出 Frontier Suite，企业级 AI 开始绑定信任框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E4%B8%89%E6%98%9F%E5%8F%91%E5%B8%83-AI-%E5%B7%A5%E5%8E%82-2030-%E8%B7%AF%E7%BA%BF%EF%BC%8C%E5%88%B6%E9%80%A0%E7%AB%AF%E6%99%BA%E8%83%BD%E5%8C%96%E6%8F%90%E9%80%9F-1"><span class="toc-number">7.7.</span> <span class="toc-text">7. 三星发布 AI 工厂 2030 路线，制造端智能化提速</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-NVIDIA-%E8%81%94%E5%90%88-Marvell-%E6%8E%A8%E8%BF%9B-NVLink-Fusion%EF%BC%8C%E5%BC%80%E6%94%BE%E4%BA%92%E8%81%94%E5%8D%87%E6%B8%A9-1"><span class="toc-number">7.8.</span> <span class="toc-text">8. NVIDIA 联合 Marvell 推进 NVLink Fusion，开放互联升温</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A6%86%E7%9B%96%E4%B8%8E%E5%A4%87%E6%B3%A8"><span class="toc-number">8.</span> <span class="toc-text">覆盖与备注</span></a></li></ol></div></div><div class="card-widget card-gov-news" id="gov-news-card"><div class="item-headline"><i class="fas fa-newspaper"></i><span>国家要闻</span><div class="gov-news__ranges"><button class="gov-news__range is-active" type="button" data-range="week">周</button><button class="gov-news__range" type="button" data-range="month">月</button><button class="gov-news__range" type="button" data-range="year">年</button></div></div><div class="gov-news"><div class="gov-news__tabs"><button class="gov-news__tab is-active" type="button" data-tab="yaowen">要闻</button><button class="gov-news__tab" type="button" data-tab="policy">最新政策</button><button class="gov-news__tab" type="button" data-tab="interpretation">政策解读</button><button class="gov-news__tab" type="button" data-tab="progress">工作进行时</button></div><div class="gov-news__meta"><span class="gov-news__live">每日 20:00 更新</span><time class="gov-news__updated">正在同步官方数据...</time></div><div class="gov-news__panels"><div class="gov-news__panel is-active" data-panel="yaowen"><ul class="gov-news__list" data-visible-count="5" data-item-selector=":scope &gt; .gov-news__item"><li class="gov-news__status">正在加载要闻...</li></ul></div><div class="gov-news__panel" data-panel="policy"><ul class="gov-news__list" data-visible-count="5" data-item-selector=":scope &gt; .gov-news__item"><li class="gov-news__status">正在加载最新政策...</li></ul></div><div class="gov-news__panel" data-panel="interpretation"><ul class="gov-news__list" data-visible-count="5" data-item-selector=":scope &gt; .gov-news__item"><li class="gov-news__status">正在加载政策解读...</li></ul></div><div class="gov-news__panel" data-panel="progress"><ul class="gov-news__list" data-visible-count="5" data-item-selector=":scope &gt; .gov-news__item"><li class="gov-news__status">正在加载工作进行时...</li></ul></div></div><div class="gov-news__footer"><a class="gov-news__more" id="gov-news-more" href="https://www.gov.cn/yaowen/liebiao/" target="_blank" rel="external nofollow noopener noreferrer">查看要闻栏目</a><div class="gov-news__pager"><button class="gov-news__page" id="gov-news-page-prev" type="button" aria-label="前翻一页" title="前翻一页" hidden><</button><button class="gov-news__page" id="gov-news-page-next" type="button" aria-label="后翻一页" title="后翻一页" hidden>></button></div></div></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list recent-post-scroll" data-visible-count="3"><div class="aside-list-item"><a class="thumbnail" href="/industry-focus/monthly/2026-03/" title="月报 2026-03"><img src="/blog_img/industry-focus-monthly-2026-03.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="月报 2026-03"></a><div class="content"><a class="title" href="/industry-focus/monthly/2026-03/" title="月报 2026-03">月报 2026-03</a><time datetime="2026-04-04T21:17:09.000Z" title="发表于 2026-04-05 05:17:09">2026-04-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/c0d3a102/" title="让 Codex 接管思源笔记，并打通 Hexo 博客仓库"><img src="/blog_img/codex-siyuan-workspace-bridge.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="让 Codex 接管思源笔记，并打通 Hexo 博客仓库"></a><div class="content"><a class="title" href="/posts/c0d3a102/" title="让 Codex 接管思源笔记，并打通 Hexo 博客仓库">让 Codex 接管思源笔记，并打通 Hexo 博客仓库</a><time datetime="2026-04-02T12:45:00.000Z" title="发表于 2026-04-02 20:45:00">2026-04-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/47e40c74/" title="年终小结"><img src="/blog_img/%E5%B0%8F%E7%BB%9326.1.1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="年终小结"></a><div class="content"><a class="title" href="/posts/47e40c74/" title="年终小结">年终小结</a><time datetime="2026-01-02T08:14:25.000Z" title="发表于 2026-01-02 16:14:25">2026-01-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1/" title="博客美化todo"><img src="/img/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96todo.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客美化todo"></a><div class="content"><a class="title" href="/posts/1/" title="博客美化todo">博客美化todo</a><time datetime="2025-12-27T13:07:23.983Z" title="发表于 2025-12-27 21:07:23">2025-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1243066710/" title="demo"><img src="/img/demo.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="demo"></a><div class="content"><a class="title" href="/posts/1243066710/" title="demo">demo</a><time datetime="2025-12-27T13:07:23.981Z" title="发表于 2025-12-27 21:07:23">2025-12-27</time></div></div></div></div></div></div></main><footer id="footer" style="background-color: rgba(45, 10, 61, 0.2);"><div class="footer-other"><div class="footer-copyright"></div><div class="footer_custom_text"><div>2025 wsysgz - 所有权利保留</div>
+<div>> stay subside <</div>
+<div>访问量:<span id="busuanzi_value_site_pv"></span> | 你是第<span id="busuanzi_value_site_uv"></span>位今日访客</div>
+</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a class="icon-V" href="javascript:void(0);" onclick="switchNightMode()" title="日间和夜间模式切换"><svg width="25" height="25" viewbox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"/></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"data-category":"Announcements","data-mapping":"pathname","data-strict":0,"data-reactions-enabled":1,"data-emit-metadata":0,"data-input-position":"bottom","data-lang":"zh-CN"}
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'wsysgz/wsysgz.github.io',
+      'data-repo-id': 'R_kgDOQrfy5A',
+      'data-category-id': 'DIC_kwDOQrfy5M4C0O_x',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script src="/js/sun_moon.js"></script><div id="he-plugin-simple"></div><script>WIDGET = {"CONFIG": {"modules": "01234","background": "5","tmpColor": "FF9900","tmpSize": "16","cityColor": "CCCCCC","citySize": "16","aqiColor": "D9D9D9","aqiSize": "16","weatherIconSize": "24","alertIconSize": "18","padding": "10px 10px 10px 10px","shadow": "0","language": "auto","fixed": "false","vertical": "top","horizontal": "left","key": "b6a6552912444b0292728f338d68d407"}}</script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', () => {
+  const pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:description\"]","link[rel=\"canonical\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      true
+        ? pjax.loadUrl('/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="输入关键词…" type="text"></div><hr><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.3"></script></div><script id="ideology-dataset" type="application/json">{"marx_lenin":[{"text":"人的思维是否具有客观的真理性，这不是一个理论的问题，而是一个实践的问题。\n人应该在实践中证明自己思维的真理性，即自己思维的现实性和力量，自己思维的此岸性。","source":"马克思《关于费尔巴哈的提纲》","recommend_title":"《关于费尔巴哈的提纲》","recommend_url":"https://www.marxists.org/chinese/marx/marxist.org-chinese-marx-1845.htm"},{"text":"共产党人可以把自己的理论概括为一句话：消灭私有制。\n但是，我们所说的并不是消灭劳动者自己劳动所得的个人占有，而是消灭那种以剥削雇佣劳动为基础的资产阶级占有。","source":"马克思、恩格斯《共产党宣言》","recommend_title":"《共产党宣言》","recommend_url":"https://www.marxists.org/chinese/marx-engels/04/001.htm"},{"text":"人们自己创造自己的历史，但是他们并不是随心所欲地创造，并不是在他们自己选定的条件下创造，\n而是在直接碰到的、既定的、从过去承继下来的条件下创造。","source":"马克思《路易·波拿巴的雾月十八日》","recommend_title":"《路易·波拿巴的雾月十八日》","recommend_url":"https://www.marxists.org/chinese/marx/marxist.org-chinese-marx-1852.htm"},{"text":"不是意识决定生活，而是生活决定意识。\n意识在任何时候都只能是被意识到了的存在，而人们的存在就是他们的现实生活过程。","source":"马克思、恩格斯《德意志意识形态》","recommend_title":"《德意志意识形态》","recommend_url":"https://www.marxists.org/chinese/marx-engels/03/index.htm"},{"text":"善于把对共产主义思想的无限忠诚同进行一切必要的实际妥协、机动、通融、迂回、退却的才干结合起来，\n这正是革命家必须学会的本领。","source":"列宁《共产主义运动中的“左派”幼稚病》","recommend_title":"《共产主义运动中的“左派”幼稚病》","recommend_url":"https://www.marxists.org/chinese/lenin-cworks/31/index.htm"},{"text":"少些，但要好些。少些，但要好些。\n这是我们今后一个相当长时期内，在国家机关建设上一切工作中都应当遵循的规则。","source":"列宁《宁肯少些，但要好些》","recommend_title":"《宁肯少些，但要好些》","recommend_url":"https://www.marxists.org/chinese/lenin-cworks/45/042.htm"}],"mao_quotes":[{"text":"这里用得着中国的一句老话：星星之火，可以燎原。\n这就是说，现在虽只有一点小小的力量，但是它的发展会是很快的，它在中国的环境里不仅具备了发展的可能性，而且具备了发展的必然性。","source":"毛泽东《星星之火，可以燎原》","recommend_title":"《星星之火，可以燎原》","recommend_url":"https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19300105.htm"},{"text":"没有调查，没有发言权。\n你对于某个问题没有调查，就停止你对于某个问题的发言权；这并不是野蛮，而是十分必要的态度。","source":"毛泽东《反对本本主义》","recommend_title":"《反对本本主义》","recommend_url":"https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-193005.htm"},{"text":"通过实践而发现真理，又通过实践而证实真理和发展真理。\n从感性认识而能动地发展到理性认识，又从理性认识而能动地指导革命实践，改造主观世界和客观世界。","source":"毛泽东《实践论》","recommend_title":"《实践论》","recommend_url":"https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-193707.htm"},{"text":"人总是要死的，但死的意义有不同。\n为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。","source":"毛泽东《为人民服务》","recommend_title":"《为人民服务》","recommend_url":"https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19440908.htm"},{"text":"下定决心，不怕牺牲，排除万难，去争取胜利。\n这个态度，就是共产党员应有的态度，就是革命人民应有的态度。","source":"毛泽东《愚公移山》","recommend_title":"《愚公移山》","recommend_url":"https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19450611.htm"}],"mao_poems":[{"title":"忆秦娥·娄山关","title_url":"https://www.marxists.org/chinese/maozedong/1968/4-098.htm","text":"西风烈，\n长空雁叫霜晨月。\n霜晨月，\n马蹄声碎，喇叭声咽。\n雄关漫道真如铁，\n而今迈步从头越。\n从头越，\n苍山如海，残阳如血。"},{"title":"沁园春·雪","title_url":"https://www.marxists.org/chinese/maozedong/1968/4-098.htm","text":"北国风光，千里冰封，万里雪飘。\n望长城内外，惟余莽莽；\n大河上下，顿失滔滔。\n山舞银蛇，原驰蜡象，\n欲与天公试比高。\n须晴日，看红装素裹，分外妖娆。\n\n江山如此多娇，引无数英雄竞折腰。\n惜秦皇汉武，略输文采；\n唐宗宋祖，稍逊风骚。\n一代天骄，成吉思汗，\n只识弯弓射大雕。\n俱往矣，数风流人物，还看今朝。"},{"title":"七律·长征","title_url":"https://www.marxists.org/chinese/maozedong/1968/4-098.htm","text":"红军不怕远征难，\n万水千山只等闲。\n五岭逶迤腾细浪，\n乌蒙磅礴走泥丸。\n金沙水拍云崖暖，\n大渡桥横铁索寒。\n更喜岷山千里雪，\n三军过后尽开颜。"},{"title":"采桑子·重阳","title_url":"https://www.marxists.org/chinese/maozedong/1968/4-098.htm","text":"人生易老天难老，岁岁重阳。\n今又重阳，战地黄花分外香。\n一年一度秋风劲，不似春光。\n胜似春光，寥廓江天万里霜。"},{"title":"浪淘沙·北戴河","title_url":"https://www.marxists.org/chinese/maozedong/1968/4-098.htm","text":"大雨落幽燕，白浪滔天，\n秦皇岛外打鱼船。\n一片汪洋都不见，\n知向谁边？\n\n往事越千年，魏武挥鞭，\n东临碣石有遗篇。\n萧瑟秋风今又是，\n换了人间。"},{"title":"卜算子·咏梅","title_url":"https://www.marxists.org/chinese/maozedong/1968/4-098.htm","text":"风雨送春归，\n飞雪迎春到。\n已是悬崖百丈冰，\n犹有花枝俏。\n俏也不争春，\n只把春来报。\n待到山花烂漫时，\n她在丛中笑。"}]}</script><script id="site-music-dataset" type="application/json">[{"id":"mao-1","title":"毛_1","artist":"站点配乐","src":"/media/site-shell/mao-1.mp3"}]</script><script defer src="/js/site-music-player.js"></script><script defer src="/js/site-media-shell.js"></script><script defer src="/js/ideology-cards.js"></script><script defer src="/js/industry-focus.js"></script><script defer src="/js/industry-source-card-helpers.js"></script><script defer src="/js/industry-source-card.js"></script><script defer src="/js/aside-scroll.js"></script><script defer src="/js/home-entry-hero.js"></script></div></body></html>
