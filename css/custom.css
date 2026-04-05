@@ -28,7 +28,6 @@
   isolation: isolate;
 }
 
-.site-media-shell__poster,
 .site-media-shell__video,
 .site-media-shell__veil {
   position: absolute;
@@ -37,58 +36,34 @@
   height: 100%;
 }
 
-.site-media-shell__poster,
 .site-media-shell__video {
   object-fit: cover;
   object-position: center center;
 }
 
-.site-media-shell__poster {
-  z-index: 0;
-  transform: scale(1.04) translate3d(0, 0, 0);
-  filter: brightness(.42) saturate(.92) contrast(1.08);
-  animation: siteMediaPosterDrift 26s ease-in-out infinite alternate;
-  opacity: 1;
-  transition: opacity .42s ease, transform .42s ease;
-}
-
 .site-media-shell__video {
-  z-index: 1;
-  opacity: 0;
-  filter: brightness(.5) saturate(.94) contrast(1.04);
-  transform: scale(1.04) translate3d(0, 0, 0);
-  transition: opacity .42s ease, transform .42s ease;
+  z-index: 0;
+  opacity: .72;
+  filter: brightness(.48) saturate(.95) contrast(1.04);
+  transition: opacity .42s ease, filter .42s ease;
 }
 
 .site-media-shell__veil {
-  z-index: 2;
+  z-index: 1;
   background:
     linear-gradient(180deg, rgba(26, 2, 4, .18) 0%, rgba(18, 2, 3, .38) 45%, rgba(8, 1, 2, .58) 100%),
     radial-gradient(circle at 50% 18%, rgba(255, 240, 214, .08), transparent 26%),
     radial-gradient(circle at 50% 80%, rgba(168, 18, 18, .18), transparent 36%);
 }
 
-.site-media-shell[data-media-state="poster"] .site-media-shell__video {
-  opacity: 0;
+.site-media-shell[data-media-state="still"] .site-media-shell__video {
+  opacity: .72;
+  filter: brightness(.48) saturate(.95) contrast(1.04);
 }
 
 .site-media-shell[data-media-state="video"] .site-media-shell__video {
   opacity: .88;
-}
-
-.site-media-shell[data-media-state="video"] .site-media-shell__poster {
-  opacity: .24;
-  animation-play-state: paused;
-}
-
-@keyframes siteMediaPosterDrift {
-  from {
-    transform: scale(1.04) translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: scale(1.08) translate3d(-1.2%, -1%, 0);
-  }
+  filter: brightness(.52) saturate(.98) contrast(1.06);
 }
 
 .site-music-player {
@@ -213,25 +188,17 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .site-media-shell__poster {
-    transform: none;
-    animation: none;
-  }
-
   .site-media-shell__video {
-    transform: none;
-    transition: none;
-  }
-
-  .site-media-shell[data-motion-mode="reduced"] .site-media-shell__poster,
-  .site-media-shell[data-motion-mode="reduced"] .site-media-shell__video {
-    transform: none;
-    animation: none;
     transition: none;
   }
 
   .site-media-shell[data-motion-mode="reduced"] .site-media-shell__video {
-    opacity: 0;
+    transition: none;
+  }
+
+  .site-media-shell[data-motion-mode="reduced"] .site-media-shell__video {
+    opacity: .72;
+    filter: brightness(.48) saturate(.95) contrast(1.04);
   }
 
   .site-music-player__button {

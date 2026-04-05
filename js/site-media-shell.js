@@ -13,14 +13,30 @@
 
   function computeMediaState({ isHome, reducedMotion, scrollY, threshold }) {
     if (reducedMotion) {
-      return "poster";
+      return "still";
     }
 
     if (!isHome) {
       return "video";
     }
 
-    return scrollY >= threshold ? "video" : "poster";
+    return scrollY >= threshold ? "video" : "still";
+  }
+
+  function primeVideoFrame(video) {
+    if (!video || video.__siteMediaFramePrimed) {
+      return;
+    }
+
+    video.__siteMediaFramePrimed = true;
+
+    if (typeof video.load === "function") {
+      try {
+        video.load();
+      } catch (error) {
+        // Ignore preload failures and fall back to the browser poster behavior.
+      }
+    }
   }
 
   function applyMediaState(root, video, nextState) {
@@ -36,12 +52,13 @@
 
     if (nextState === "video") {
       return Promise.resolve(video.play?.()).catch(() => {
-        root.dataset.mediaState = "poster";
+        root.dataset.mediaState = "still";
         video.pause?.();
         return false;
       });
     }
 
+    primeVideoFrame(video);
     video.pause?.();
     return Promise.resolve(true);
   }
@@ -67,6 +84,8 @@
     let rafId = 0;
     let scheduled = false;
     let currentState = "";
+
+    primeVideoFrame(video);
 
     function syncState() {
       root.dataset.motionMode = motionQuery?.matches ? "reduced" : "full";
