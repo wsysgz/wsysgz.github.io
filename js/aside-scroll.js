@@ -8,14 +8,6 @@
       return ":scope > .aside-list-item";
     }
 
-    if (list.classList.contains("industry-focus-card__list")) {
-      return ":scope > .industry-focus-card__item";
-    }
-
-    if (list.classList.contains("industry-source-card__list")) {
-      return ":scope > .industry-source-card__item";
-    }
-
     return ":scope > .gov-news__item";
   }
 
@@ -47,7 +39,7 @@
 
   function refreshScrollableCards(scope = document) {
     scope
-      .querySelectorAll(".recent-post-scroll, .gov-news__list[data-visible-count], .industry-focus-card__list[data-visible-count], .industry-source-card__list[data-visible-count]")
+      .querySelectorAll(".recent-post-scroll, .gov-news__list[data-visible-count]")
       .forEach((list) => {
         applyScrollableViewport(list);
       });
@@ -64,24 +56,6 @@
   window.addEventListener("resize", () => scheduleRefresh());
 
   document.addEventListener("gov-news:refresh-scroll", (event) => {
-    if (event?.detail?.scope) {
-      scheduleRefresh(event.detail.scope);
-      return;
-    }
-
-    scheduleRefresh();
-  });
-
-  document.addEventListener("industry-focus:refresh-scroll", (event) => {
-    if (event?.detail?.scope) {
-      scheduleRefresh(event.detail.scope);
-      return;
-    }
-
-    scheduleRefresh();
-  });
-
-  document.addEventListener("industry-source:refresh-scroll", (event) => {
     if (event?.detail?.scope) {
       scheduleRefresh(event.detail.scope);
       return;
