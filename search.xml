@@ -4,39 +4,6 @@
   
     
     <entry>
-      <title>让 Codex 接管思源笔记，并打通 Hexo 博客仓库</title>
-      <link href="/posts/c0d3a102/"/>
-      <url>/posts/c0d3a102/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/blog_img/codex-siyuan-workspace-bridge.jpg" alt="让 Codex 接管思源并打通博客仓库"></p><h1 id="让-Codex-接管思源笔记，并打通-Hexo-博客仓库"><a href="#让-Codex-接管思源笔记，并打通-Hexo-博客仓库" class="headerlink" title="让 Codex 接管思源笔记，并打通 Hexo 博客仓库"></a>让 Codex 接管思源笔记，并打通 Hexo 博客仓库</h1><blockquote><p>历史说明：本文记录的是 2026-04-02 的思源方案。当前知识沉淀方向已转为 Obsidian + <code>D:\AI\knowledge\git\elec_AI</code>，产业情报主系统已转为 <code>D:\GitHub\auto</code> &#x2F; VS_AI。本文保留为历史归档，不再作为当前接手路线。</p></blockquote><p>把 AI、笔记和代码仓库接成一条工作流之后，AI 才不只是“会聊天”，而是开始具备可执行的工作能力：先到思源里找方案和草稿，再回到本地仓库改代码、写文章，最后把结果再回写到思源。</p><h2 id="这次打通了什么"><a href="#这次打通了什么" class="headerlink" title="这次打通了什么"></a>这次打通了什么</h2><ul><li>Codex 现在可以通过全局 <code>siyuan</code> MCP 直接操作思源笔记</li><li>思源默认走本机 <code>http://127.0.0.1:6806</code></li><li>本机思源程序路径固定为 <code>D:\siyuan\SiYuan.exe</code></li><li>运行中的思源 workspace 位于 <code>C:\Users\24160\SiYuan</code></li><li>额外补了一个全局 skill，用来把思源、当前工作区和博客仓库串起来</li></ul><h2 id="现在-AI-可以直接做的事"><a href="#现在-AI-可以直接做的事" class="headerlink" title="现在 AI 可以直接做的事"></a>现在 AI 可以直接做的事</h2><ul><li>列出和搜索思源笔记本、文档和标签</li><li>读取笔记内容，整理成任务说明或博客草稿</li><li>新建、追加、覆盖、移动思源文档</li><li>在批量操作前创建快照</li><li>先读思源里的方案，再改本地仓库</li><li>把仓库中的修改结果回写到思源</li></ul><h2 id="这套链路是怎么工作的"><a href="#这套链路是怎么工作的" class="headerlink" title="这套链路是怎么工作的"></a>这套链路是怎么工作的</h2><h3 id="1-用户级全局接入思源-MCP"><a href="#1-用户级全局接入思源-MCP" class="headerlink" title="1. 用户级全局接入思源 MCP"></a>1. 用户级全局接入思源 MCP</h3><p>思源 MCP 不再只绑定当前博客仓库，而是挂到了用户级 <code>C:\Users\24160\.codex\config.toml</code>。这样无论在哪个项目里启动 Codex，只要是这个用户，都可以复用同一套思源接入能力。</p><h3 id="2-本地启动脚本负责兜底"><a href="#2-本地启动脚本负责兜底" class="headerlink" title="2. 本地启动脚本负责兜底"></a>2. 本地启动脚本负责兜底</h3><p>如果 <code>127.0.0.1:6806</code> 没启动，启动脚本会尝试拉起本机思源，再等待接口就绪。这样平时不用反复手动检查服务是否在跑。</p><h3 id="3-思源-skill-负责把笔记和仓库串起来"><a href="#3-思源-skill-负责把笔记和仓库串起来" class="headerlink" title="3. 思源 skill 负责把笔记和仓库串起来"></a>3. 思源 skill 负责把笔记和仓库串起来</h3><p>我额外补了一个全局 skill，专门处理以下场景：</p><ul><li>先搜索思源里的方案，再改代码</li><li>按思源草稿生成博客文章</li><li>把这次修改总结回写到思源</li><li>在博客仓库 <code>d:\blog\butterfly</code> 下优先读取 <code>AI_OPERATION_GUIDE.md</code></li></ul><h2 id="推荐工作流"><a href="#推荐工作流" class="headerlink" title="推荐工作流"></a>推荐工作流</h2><ol><li>先让 AI 搜索思源里相关笔记</li><li>确认范围后，让 AI 开始改仓库</li><li>如果是大批量整理，先做思源快照</li><li>改完后，把结果同步回思源</li><li>博客内容确认后，再执行 <code>hexo generate</code> 检查生成产物</li></ol><h2 id="适合拿来做什么"><a href="#适合拿来做什么" class="headerlink" title="适合拿来做什么"></a>适合拿来做什么</h2><ul><li>把思源里的任务笔记直接转成可执行开发任务</li><li>把思源草稿整理成博客文章并落进 Hexo 仓库</li><li>把调试记录、配置说明、部署结果统一回写到思源</li><li>让笔记、代码和产出不再分裂在三个地方</li></ul><h2 id="当前落地结果"><a href="#当前落地结果" class="headerlink" title="当前落地结果"></a>当前落地结果</h2><p>这次已经完成了三件事：</p><ul><li>思源 MCP 改成了全局可用</li><li>全局 skill 已经补齐</li><li>当前博客仓库已经纳入这套联动流程</li></ul><p>后续在 Codex 里直接说下面这类话就可以：</p><ul><li>“先搜索我思源里关于这个功能的笔记，再改仓库”</li><li>“读取思源里的博客草稿，整理成 Hexo 文章”</li><li>“把这次修改结果回写到思源”</li><li>“先给思源做快照，再批量整理标签或文档”</li></ul><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>当 AI 能同时看见笔记、工作区和博客仓库时，它才真正从“对话工具”变成“执行工具”。接通思源之后，很多原本要手工在多个软件之间来回搬运的事情，终于可以被收拢成一条更顺手的工作链路。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术折腾 </category>
-          
-          <category> AI协作 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Codex </tag>
-            
-            <tag> 思源笔记 </tag>
-            
-            <tag> MCP </tag>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>年终小结</title>
       <link href="/posts/47e40c74/"/>
       <url>/posts/47e40c74/</url>
